@@ -1,0 +1,330 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+$verdeCordoba: #61B142;
+$Impact: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$paddingParaBotones: 4px;
+
+h1 {
+    color: $verdeCordoba;
+    font-size: 40px;
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+}
+
+h2 {
+    @extend h1;
+    font-family: $Impact;
+    color: black;
+    font-size: 55px;
+
+}
+
+
+.mainDelIndex {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1.75fr 1fr;
+    grid-template-areas: 
+        "img img img"
+        "img centro img"
+        "img img img";
+
+    img {
+        grid-area: img;
+    }
+
+    h1 {
+        grid-area: centro;
+    }
+
+    p {
+        grid-area: centro;
+        color: white;
+        max-width: 500px;
+        text-align: center;
+        margin: auto;
+        line-height: 25px;
+    }
+    align-content: center;
+}
+
+
+.mainDelIndex__imagen {
+    width: 100%
+}
+
+@media(max-width:520px) {
+    .mainDelIndex h1{
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+    .mainDelIndex p{
+        padding: 30px;
+        margin-bottom: 75px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+@media(min-width:520px) and (max-width:728px) {
+    .mainDelIndex h1{
+        font-size: 35px;
+        margin-top: 55px;
+    }
+
+    .mainDelIndex p{
+        padding: 30px;
+        margin-bottom: 75px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media(min-width:729px) and (max-width:1024px) {
+    .mainDelIndex h1{
+        font-size: 45px;
+        margin-top: 75px;
+    }
+
+    .mainDelIndex p{
+        padding: 30px;
+        margin-bottom: 100px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1200px) {
+    .mainDelIndex h1{
+        font-size: 45px;
+        margin-top: 125px;
+    }
+
+    .mainDelIndex p{
+        padding: 30px;
+        margin-bottom: 180px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .mainDelIndex h1{
+        font-size: 45px;
+        margin-top: 150px;
+    }
+
+    .mainDelIndex p{
+        padding: 30px;
+        margin-bottom: 180px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .mainDelIndex {
+        margin-right: 180px;
+    }
+}
+
+
+.footer img{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+
+/*Acá empiezan los estilos de la página nosotros*/
+
+
+
+.nosotrosMain  {
+    text-align: center;
+    h2{
+        margin-top: 30px;
+    }
+    p{
+        margin-bottom: 50px;
+    }
+}
+
+
+.nosotrosTablaDeServicios {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background:cornflowerblue;
+    border-radius: 50px;
+    display: grid;
+    height: 50vh;
+    text-align: center;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30% 25% 20% 25%;    
+    grid-template-areas: 
+        "titPrinc titPrinc titPrinc titPrinc titPrinc"
+        "tit1 tit2 tit3 tit4 tit5"
+        "precio1 precio2 precio3 precio4 precio5"
+        "footer footer footer footer footer"
+}
+
+.nosotrosTablaDeServicios__tituloPrincipal  {
+    
+    grid-area: titPrinc;
+}
+
+.nosotrosTablaDeServicios__titulo1 {
+    
+    grid-area: tit1;
+}
+
+.nosotrosTablaDeServicios__titulo2 {
+    
+    grid-area: tit2;
+}
+
+.nosotrosTablaDeServicios__titulo3 {
+    
+    grid-area: tit3;
+}
+
+.nosotrosTablaDeServicios__titulo4 {
+    
+    grid-area: tit4;
+}
+
+.nosotrosTablaDeServicios__titulo5 {
+    
+    grid-area: tit5;
+}
+
+.nosotrosTablaDeServicios__precio1 {
+    
+    grid-area: precio1;
+}
+
+.nosotrosTablaDeServicios__precio2 {
+    
+    grid-area: precio2;
+}
+
+.nosotrosTablaDeServicios__precio3 {
+    
+    grid-area: precio3;
+}
+
+.nosotrosTablaDeServicios__precio4 {
+    
+    grid-area: precio4;
+}
+
+.nosotrosTablaDeServicios__precio5 {
+    
+    grid-area: precio5;
+}
+
+.nosotrosTablaDeServicios__footer {
+    
+    grid-area: footer;
+}
+
+
+
+/*Acá empiezan los estilos de la Galería de Imagenes*/
+
+
+
+.mainDeImagenes__titulo {
+    @extend .formularioPrincipal__tituloDelFormulario;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mainDeImagenes__galeria--imagenes {
+    margin: 5px;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.mainDeImagenes__galeria--contenedor {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+}
+
+@media(min-width:520px) {
+    .mainDeImagenes__galeria--contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width:728px) {
+    .mainDeImagenes__galeria--contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width:1024px) {
+    .mainDeImagenes__galeria--contenedor {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .mainDeImagenes__galeria--contenedor {
+        width: 1024px;
+    }
+}
+
+@media(min-width:1200px) {
+    .mainDeImagenes__galeria--contenedor {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .mainDeImagenes__galeria--contenedor {
+        width: 1200px;
+    }
+}
+
+
+
+
+
+
+/*Acá empiezan los estilos de la página contactanos*/
+
+
+
+.formularioPrincipal {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.formularioPrincipal__tituloDelFormulario {
+    @extend h1;
+    font-family: $Impact;
+    color: black;
+    font-size: 55px;
+}
+
+.formularioPrincipal__form {
+    max-width: 339px;
+    text-align: center;
+    background-color: $verdeCordoba;
+    background: linear-gradient(to top,#039B8E, $verdeCordoba);
+    padding: 20px;
+}
+
+.formularioPrincipal__boton--reiniciar {
+    padding: $paddingParaBotones;
+}
+
+.formularioPrincipal__boton--enviar {
+    padding: $paddingParaBotones;
+}
