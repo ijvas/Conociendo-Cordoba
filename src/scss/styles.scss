@@ -58,7 +58,7 @@ h2 {
     width: 100%
 }
 
-@media(max-width:520px) {
+@media(max-width:575px) {
     .mainDelIndex h1{
         font-size: 30px;
         margin-top: 60px;
@@ -72,7 +72,7 @@ h2 {
     }
 }
 
-@media(min-width:520px) and (max-width:728px) {
+@media(min-width:576px) and (max-width:767px) {
     .mainDelIndex h1{
         font-size: 35px;
         margin-top: 55px;
@@ -86,7 +86,7 @@ h2 {
     }
 }
 
-@media(min-width:729px) and (max-width:1024px) {
+@media(min-width:768px) and (max-width:991px) {
     .mainDelIndex h1{
         font-size: 45px;
         margin-top: 75px;
@@ -100,7 +100,7 @@ h2 {
     }
 }
 
-@media(min-width:1024px) and (max-width:1200px) {
+@media(min-width:992px) and (max-width:1199px) {
     .mainDelIndex h1{
         font-size: 45px;
         margin-top: 125px;
