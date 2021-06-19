@@ -160,6 +160,7 @@ h2 {
   margin: 5px; }
   .mainDeImagenes__galeria--imagenes img {
     width: 100%;
+    height: 100%;
     object-fit: cover; }
 
 .mainDeImagenes__galeria--contenedor {
