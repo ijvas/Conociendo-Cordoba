@@ -163,13 +163,24 @@ h2 {
 .nosotrosMain  {
     text-align: center;
     h2{
-        margin-top: 30px;
+        margin-top: 2rem;
     }
     p{
-        margin-bottom: 50px;
+        margin-bottom: 3.5rem;
     }
 }
 
+.nosotrosMain__titulo {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.nosotrosMain__parrafo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+}
 
 .nosotrosTablaDeServicios {
     margin-top: 30px;
@@ -190,7 +201,7 @@ h2 {
 }
 
 .nosotrosTablaDeServicios__tituloPrincipal  {
-    
+    font-family: "Roboto", sans-serif;
     grid-area: titPrinc;
 }
 
@@ -249,7 +260,18 @@ h2 {
     grid-area: footer;
 }
 
+.footerDeNosotros {
+    margin-bottom: 0.5rem;
+}
 
+.footerDeNosotros__link{
+    text-decoration: none;
+}
+
+.footerDeNosotros__link--img{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
 
 
 

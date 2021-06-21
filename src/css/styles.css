@@ -101,9 +101,19 @@ h2 {
 .nosotrosMain {
   text-align: center; }
   .nosotrosMain h2 {
-    margin-top: 30px; }
+    margin-top: 2rem; }
   .nosotrosMain p {
-    margin-bottom: 50px; }
+    margin-bottom: 3.5rem; }
+
+.nosotrosMain__titulo {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 4rem; }
+
+.nosotrosMain__parrafo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem; }
 
 .nosotrosTablaDeServicios {
   margin-top: 30px;
@@ -118,6 +128,7 @@ h2 {
   grid-template-areas: "titPrinc titPrinc titPrinc titPrinc titPrinc" "tit1 tit2 tit3 tit4 tit5" "precio1 precio2 precio3 precio4 precio5" "footer footer footer footer footer"; }
 
 .nosotrosTablaDeServicios__tituloPrincipal {
+  font-family: "Roboto", sans-serif;
   grid-area: titPrinc; }
 
 .nosotrosTablaDeServicios__titulo1 {
@@ -152,6 +163,16 @@ h2 {
 
 .nosotrosTablaDeServicios__footer {
   grid-area: footer; }
+
+.footerDeNosotros {
+  margin-bottom: 0.5rem; }
+
+.footerDeNosotros__link {
+  text-decoration: none; }
+
+.footerDeNosotros__link--img {
+  margin-top: 1rem;
+  margin-right: 1rem; }
 
 /*Acá empiezan los estilos de la Galería de Imagenes*/
 .mainDeGaleria__titulo {
