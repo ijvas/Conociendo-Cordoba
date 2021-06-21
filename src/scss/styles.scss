@@ -371,6 +371,7 @@ h2 {
     }
 
     .formularioPrincipal__form {
+        font-family: "Monserrat", sans-serif;
         text-align: center;
         background-color: $verdeCordoba;
         background: linear-gradient(to top,#039B8E, $verdeCordoba);
@@ -408,8 +409,6 @@ h2 {
 @media(min-width: 333px) {
 
     .formularioPrincipal__tituloDelFormulario {
-        font-family: $Impact;
-        color: black;
         font-size: 3.5rem;
     }
 }
@@ -420,9 +419,6 @@ h2 {
 
     .formularioPrincipal__form {
         width: 100%;
-        text-align: center;
-        background-color: $verdeCordoba;
-        background: linear-gradient(to top,#039B8E, $verdeCordoba);
     }
 
     .footerDeContactanos {
@@ -444,9 +440,6 @@ h2 {
 
     .formularioPrincipal__form {
         padding-top: 2rem;
-        text-align: center;
-        background-color: $verdeCordoba;
-        background: linear-gradient(to top,#039B8E, $verdeCordoba);
         border-bottom-right-radius: 2rem;
         border-top-right-radius: 2rem;
         border-bottom-left-radius: 0px;

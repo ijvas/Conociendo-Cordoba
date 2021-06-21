@@ -230,6 +230,7 @@ h2 {
     color: black;
     font-size: 2.8rem; }
   .formularioPrincipal__form {
+    font-family: "Monserrat", sans-serif;
     text-align: center;
     background-color: #61B142;
     background: linear-gradient(to top, #039B8E, #61B142);
@@ -251,16 +252,11 @@ h2 {
 
 @media (min-width: 333px) {
   .formularioPrincipal__tituloDelFormulario, .mainDeGaleria__titulo {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: black;
     font-size: 3.5rem; } }
 
 @media (min-width: 768px) {
   .formularioPrincipal__form {
-    width: 100%;
-    text-align: center;
-    background-color: #61B142;
-    background: linear-gradient(to top, #039B8E, #61B142); }
+    width: 100%; }
   .footerDeContactanos {
     margin-bottom: 1rem; } }
 
@@ -273,9 +269,6 @@ h2 {
     border-top-right-radius: 0px; }
   .formularioPrincipal__form {
     padding-top: 2rem;
-    text-align: center;
-    background-color: #61B142;
-    background: linear-gradient(to top, #039B8E, #61B142);
     border-bottom-right-radius: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 0px; } }
