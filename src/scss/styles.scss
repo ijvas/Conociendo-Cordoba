@@ -364,6 +364,12 @@ h2 {
         border-top-right-radius: 2rem;
     }
 
+    .formularioPrincipal__tituloDelFormulario {
+        font-family: $Impact;
+        color: black;
+        font-size: 2.8rem;
+    }
+
     .formularioPrincipal__form {
         text-align: center;
         background-color: $verdeCordoba;
@@ -374,12 +380,6 @@ h2 {
         border-bottom-right-radius: 2rem;
     }
 
-    .formularioPrincipal__tituloDelFormulario {
-        font-family: $Impact;
-        color: black;
-        font-size: 3.5rem;
-    }
-    
     .formularioPrincipal__boton--reiniciar {
         padding: $paddingParaBotones;
     }
@@ -389,16 +389,28 @@ h2 {
     }
 
     .footerDeContactanos {
-        margin-bottom: 0.5rem;
+        margin-bottom: 5px;
     }
 
-    .footerDeContactanos__link{
-        text-decoration: none;
+    .footerDeContactanos {
+        .footerDeContactanos__link{
+            text-decoration: none;
+        }
+    
     }
     
     .footerDeContactanos__link--img{
-        margin-top: 1rem;
-        margin-right: 1rem;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media(min-width: 333px) {
+
+    .formularioPrincipal__tituloDelFormulario {
+        font-family: $Impact;
+        color: black;
+        font-size: 3.5rem;
     }
 }
 

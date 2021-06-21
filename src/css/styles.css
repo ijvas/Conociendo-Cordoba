@@ -225,6 +225,10 @@ h2 {
     width: 100%;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem; }
+  .formularioPrincipal__tituloDelFormulario, .mainDeGaleria__titulo {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: black;
+    font-size: 2.8rem; }
   .formularioPrincipal__form {
     text-align: center;
     background-color: #61B142;
@@ -233,21 +237,23 @@ h2 {
     padding-bottom: 5px;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem; }
-  .formularioPrincipal__tituloDelFormulario, .mainDeGaleria__titulo {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: black;
-    font-size: 3.5rem; }
   .formularioPrincipal__boton--reiniciar {
     padding: 4px; }
   .formularioPrincipal__boton--enviar {
     padding: 4px; }
   .footerDeContactanos {
-    margin-bottom: 0.5rem; }
-  .footerDeContactanos__link {
+    margin-bottom: 5px; }
+  .footerDeContactanos .footerDeContactanos__link {
     text-decoration: none; }
   .footerDeContactanos__link--img {
-    margin-top: 1rem;
-    margin-right: 1rem; } }
+    margin-top: 20px;
+    margin-right: 20px; } }
+
+@media (min-width: 333px) {
+  .formularioPrincipal__tituloDelFormulario, .mainDeGaleria__titulo {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: black;
+    font-size: 3.5rem; } }
 
 @media (min-width: 768px) {
   .formularioPrincipal__form {
