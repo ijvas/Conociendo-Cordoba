@@ -284,7 +284,9 @@ h2 {
 
 
 .mainDeGaleria__titulo {
-    @extend .formularioPrincipal__tituloDelFormulario;
+    font-family: $Impact;
+    color: black;
+    font-size: 3rem;
     text-align: center;
     margin-top: 1.5rem;
 }
@@ -365,7 +367,7 @@ h2 {
     }
 
     .formularioPrincipal__tituloDelFormulario {
-        font-family: $Impact;
+        font-family: "Roboto", sans-serif;
         color: black;
         font-size: 2.8rem;
     }

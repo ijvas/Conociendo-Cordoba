@@ -176,6 +176,9 @@ h2 {
 
 /*Acá empiezan los estilos de la Galería de Imagenes*/
 .mainDeGaleria__titulo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-size: 3rem;
   text-align: center;
   margin-top: 1.5rem; }
 
@@ -225,8 +228,8 @@ h2 {
     width: 100%;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem; }
-  .formularioPrincipal__tituloDelFormulario, .mainDeGaleria__titulo {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  .formularioPrincipal__tituloDelFormulario {
+    font-family: "Roboto", sans-serif;
     color: black;
     font-size: 2.8rem; }
   .formularioPrincipal__form {
@@ -251,7 +254,7 @@ h2 {
     margin-right: 20px; } }
 
 @media (min-width: 333px) {
-  .formularioPrincipal__tituloDelFormulario, .mainDeGaleria__titulo {
+  .formularioPrincipal__tituloDelFormulario {
     font-size: 3.5rem; } }
 
 @media (min-width: 768px) {
