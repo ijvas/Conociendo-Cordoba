@@ -4,7 +4,7 @@
   padding: 0px;
   box-sizing: border-box; }
 
-h1, h2, .formularioPrincipal__tituloDelFormulario, .mainDeImagenes__titulo {
+h1, h2 {
   color: #61B142;
   font-size: 40px;
   font-family: 'Homemade Apple', cursive;
@@ -23,7 +23,7 @@ h2 {
   align-content: center; }
   .mainDelIndex img {
     grid-area: img; }
-  .mainDelIndex h1, .mainDelIndex h2, .mainDelIndex .formularioPrincipal__tituloDelFormulario, .mainDelIndex .mainDeImagenes__titulo {
+  .mainDelIndex h1, .mainDelIndex h2 {
     grid-area: centro; }
   .mainDelIndex p {
     grid-area: centro;
@@ -36,8 +36,15 @@ h2 {
 .mainDelIndex__imagen {
   width: 100%; }
 
+.footerDelIndex .footerDelIndex__link {
+  text-decoration: none; }
+
+.footerDelIndex__link--img {
+  margin-top: 20px;
+  margin-right: 20px; }
+
 @media (max-width: 575px) {
-  .mainDelIndex h1, .mainDelIndex h2, .mainDelIndex .formularioPrincipal__tituloDelFormulario, .mainDelIndex .mainDeImagenes__titulo {
+  .mainDelIndex h1, .mainDelIndex h2 {
     font-size: 30px;
     margin-top: 60px; }
   .mainDelIndex p {
@@ -47,7 +54,7 @@ h2 {
     line-height: 15px; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .mainDelIndex h1, .mainDelIndex h2, .mainDelIndex .formularioPrincipal__tituloDelFormulario, .mainDelIndex .mainDeImagenes__titulo {
+  .mainDelIndex h1, .mainDelIndex h2 {
     font-size: 35px;
     margin-top: 55px; }
   .mainDelIndex p {
@@ -57,7 +64,7 @@ h2 {
     line-height: 15px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .mainDelIndex h1, .mainDelIndex h2, .mainDelIndex .formularioPrincipal__tituloDelFormulario, .mainDelIndex .mainDeImagenes__titulo {
+  .mainDelIndex h1, .mainDelIndex h2 {
     font-size: 45px;
     margin-top: 75px; }
   .mainDelIndex p {
@@ -67,7 +74,7 @@ h2 {
     line-height: 20px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .mainDelIndex h1, .mainDelIndex h2, .mainDelIndex .formularioPrincipal__tituloDelFormulario, .mainDelIndex .mainDeImagenes__titulo {
+  .mainDelIndex h1, .mainDelIndex h2 {
     font-size: 45px;
     margin-top: 125px; }
   .mainDelIndex p {
@@ -77,7 +84,7 @@ h2 {
     line-height: 20px; } }
 
 @media (min-width: 1200px) {
-  .mainDelIndex h1, .mainDelIndex h2, .mainDelIndex .formularioPrincipal__tituloDelFormulario, .mainDelIndex .mainDeImagenes__titulo {
+  .mainDelIndex h1, .mainDelIndex h2 {
     font-size: 45px;
     margin-top: 150px; }
   .mainDelIndex p {
@@ -86,14 +93,9 @@ h2 {
     font-size: 15px;
     line-height: 20px; }
   .mainDelIndex {
-    margin-right: 180px; } }
-
-.footer .footer__link {
-  text-decoration: none; }
-
-.footer img {
-  margin-top: 20px;
-  margin-right: 20px; }
+    margin-right: 180px; }
+  .footerDelIndex {
+    margin-left: 182px; } }
 
 /*Acá empiezan los estilos de la página nosotros*/
 .nosotrosMain {
@@ -154,20 +156,20 @@ h2 {
 /*Acá empiezan los estilos de la Galería de Imagenes*/
 .mainDeImagenes__titulo {
   text-align: center;
-  margin-top: 30px; }
-
-.mainDeImagenes__galeria--imagenes {
-  margin: 5px; }
-  .mainDeImagenes__galeria--imagenes img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+  margin-top: 1.5rem; }
 
 .mainDeImagenes__galeria--contenedor {
   width: 100%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 2rem;
   display: grid; }
+
+.mainDeImagenes__galeria--imagenes {
+  margin: 0.1rem; }
+  .mainDeImagenes__galeria--imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 @media (min-width: 520px) {
   .mainDeImagenes__galeria--contenedor {
@@ -179,35 +181,67 @@ h2 {
 
 @media (min-width: 1024px) {
   .mainDeImagenes__galeria--contenedor {
-    grid-template-columns: 1fr 1fr 1fr 1fr; }
-  .mainDeImagenes__galeria--contenedor {
-    width: 1024px; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1024px; }
+  .footer {
+    margin-left: 65px; } }
 
 @media (min-width: 1200px) {
   .mainDeImagenes__galeria--contenedor {
-    grid-template-columns: 1fr 1fr 1fr 1fr; }
-  .mainDeImagenes__galeria--contenedor {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 1200px; } }
 
 /*Acá empiezan los estilos de la página contactanos*/
-.formularioPrincipal {
-  display: flex;
-  flex-flow: row wrap; }
+@media (min-width: 1px) {
+  .formularioPrincipal__img {
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem; }
+  .formularioPrincipal__form {
+    text-align: center;
+    background-color: #61B142;
+    background: linear-gradient(to top, #039B8E, #61B142);
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem; }
+  .formularioPrincipal__tituloDelFormulario, .mainDeImagenes__titulo {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: black;
+    font-size: 3.5rem; }
+  .formularioPrincipal__boton--reiniciar {
+    padding: 4px; }
+  .formularioPrincipal__boton--enviar {
+    padding: 4px; }
+  .footerDeContactanos {
+    margin-bottom: 5px; }
+  .footerDeContactanos .footerDeContactanos__link {
+    text-decoration: none; }
+  .footerDeContactanos__link--img {
+    margin-top: 20px;
+    margin-right: 20px; } }
 
-.formularioPrincipal__tituloDelFormulario, .mainDeImagenes__titulo {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: black;
-  font-size: 55px; }
+@media (min-width: 768px) {
+  .formularioPrincipal__form {
+    width: 100%;
+    text-align: center;
+    background-color: #61B142;
+    background: linear-gradient(to top, #039B8E, #61B142); }
+  footer {
+    margin-bottom: 5px; } }
 
-.formularioPrincipal__form {
-  max-width: 339px;
-  text-align: center;
-  background-color: #61B142;
-  background: linear-gradient(to top, #039B8E, #61B142);
-  padding: 20px; }
-
-.formularioPrincipal__boton--reiniciar {
-  padding: 4px; }
-
-.formularioPrincipal__boton--enviar {
-  padding: 4px; }
+@media (min-width: 1200px) {
+  .formularioPrincipal {
+    display: flex; }
+  .formularioPrincipal__img {
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 0px; }
+  .formularioPrincipal__form {
+    padding-top: 2rem;
+    text-align: center;
+    background-color: #61B142;
+    background: linear-gradient(to top, #039B8E, #61B142);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0px; } }
