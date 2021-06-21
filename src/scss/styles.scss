@@ -261,20 +261,20 @@ h2 {
 
 
 
-.mainDeImagenes__titulo {
+.mainDeGaleria__titulo {
     @extend .formularioPrincipal__tituloDelFormulario;
     text-align: center;
     margin-top: 1.5rem;
 }
 
-.mainDeImagenes__galeria--contenedor {
+.mainDeGaleria__galeria--contenedor {
     width: 100%;
     margin: auto;
     margin-top: 2rem;
     display: grid;
 }
 
-.mainDeImagenes__galeria--imagenes {
+.mainDeGaleria__galeria--imagenes {
     margin: 0.1rem;
     img{
         width: 100%;
@@ -284,30 +284,40 @@ h2 {
 }
 
 @media(min-width:520px) {
-    .mainDeImagenes__galeria--contenedor {
+    .mainDeGaleria__galeria--contenedor {
         grid-template-columns: 1fr 1fr;
+    }
+    .footerDeGaleria {
+        margin-bottom: 0.5rem;
+    }
+    .footerDeGaleria__link{
+        text-decoration: none;
+    }
+    .footerDeGaleria__link--img{
+        margin-top: 1rem;
+        margin-right: 1rem;
     }
 }
 
 @media(min-width:728px) {
-    .mainDeImagenes__galeria--contenedor {
+    .mainDeGaleria__galeria--contenedor {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media(min-width:1024px) {
-    .mainDeImagenes__galeria--contenedor {
+    .mainDeGaleria__galeria--contenedor {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         width: 1024px;
     }
 
-    .footer {
+    .footerDeGaleria {
         margin-left: 65px;
     }
 }
 
 @media(min-width:1200px) {
-    .mainDeImagenes__galeria--contenedor {
+    .mainDeGaleria__galeria--contenedor {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         width: 1200px;
     }
@@ -357,19 +367,16 @@ h2 {
     }
 
     .footerDeContactanos {
-        margin-bottom: 5px;
+        margin-bottom: 0.5rem;
     }
 
-    .footerDeContactanos {
-        .footerDeContactanos__link{
-            text-decoration: none;
-        }
-    
+    .footerDeContactanos__link{
+        text-decoration: none;
     }
     
     .footerDeContactanos__link--img{
-        margin-top: 20px;
-        margin-right: 20px;
+        margin-top: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -384,8 +391,8 @@ h2 {
         background: linear-gradient(to top,#039B8E, $verdeCordoba);
     }
 
-    footer {
-        margin-bottom: 5px;
+    .footerDeContactanos {
+        margin-bottom: 1rem;
     }
 }
 

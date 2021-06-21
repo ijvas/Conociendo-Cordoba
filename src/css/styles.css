@@ -154,40 +154,47 @@ h2 {
   grid-area: footer; }
 
 /*Acá empiezan los estilos de la Galería de Imagenes*/
-.mainDeImagenes__titulo {
+.mainDeGaleria__titulo {
   text-align: center;
   margin-top: 1.5rem; }
 
-.mainDeImagenes__galeria--contenedor {
+.mainDeGaleria__galeria--contenedor {
   width: 100%;
   margin: auto;
   margin-top: 2rem;
   display: grid; }
 
-.mainDeImagenes__galeria--imagenes {
+.mainDeGaleria__galeria--imagenes {
   margin: 0.1rem; }
-  .mainDeImagenes__galeria--imagenes img {
+  .mainDeGaleria__galeria--imagenes img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
 
 @media (min-width: 520px) {
-  .mainDeImagenes__galeria--contenedor {
-    grid-template-columns: 1fr 1fr; } }
+  .mainDeGaleria__galeria--contenedor {
+    grid-template-columns: 1fr 1fr; }
+  .footerDeGaleria {
+    margin-bottom: 0.5rem; }
+  .footerDeGaleria__link {
+    text-decoration: none; }
+  .footerDeGaleria__link--img {
+    margin-top: 1rem;
+    margin-right: 1rem; } }
 
 @media (min-width: 728px) {
-  .mainDeImagenes__galeria--contenedor {
+  .mainDeGaleria__galeria--contenedor {
     grid-template-columns: 1fr 1fr 1fr; } }
 
 @media (min-width: 1024px) {
-  .mainDeImagenes__galeria--contenedor {
+  .mainDeGaleria__galeria--contenedor {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 1024px; }
-  .footer {
+  .footerDeGaleria {
     margin-left: 65px; } }
 
 @media (min-width: 1200px) {
-  .mainDeImagenes__galeria--contenedor {
+  .mainDeGaleria__galeria--contenedor {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 1200px; } }
 
@@ -205,7 +212,7 @@ h2 {
     padding-bottom: 5px;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem; }
-  .formularioPrincipal__tituloDelFormulario, .mainDeImagenes__titulo {
+  .formularioPrincipal__tituloDelFormulario, .mainDeGaleria__titulo {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     color: black;
     font-size: 3.5rem; }
@@ -214,12 +221,12 @@ h2 {
   .formularioPrincipal__boton--enviar {
     padding: 4px; }
   .footerDeContactanos {
-    margin-bottom: 5px; }
-  .footerDeContactanos .footerDeContactanos__link {
+    margin-bottom: 0.5rem; }
+  .footerDeContactanos__link {
     text-decoration: none; }
   .footerDeContactanos__link--img {
-    margin-top: 20px;
-    margin-right: 20px; } }
+    margin-top: 1rem;
+    margin-right: 1rem; } }
 
 @media (min-width: 768px) {
   .formularioPrincipal__form {
@@ -227,8 +234,8 @@ h2 {
     text-align: center;
     background-color: #61B142;
     background: linear-gradient(to top, #039B8E, #61B142); }
-  footer {
-    margin-bottom: 5px; } }
+  .footerDeContactanos {
+    margin-bottom: 1rem; } }
 
 @media (min-width: 1200px) {
   .formularioPrincipal {
