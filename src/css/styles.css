@@ -19,7 +19,7 @@ h2 {
 
 /*Acá empiezan los estilos del Index*/
 .mainDelIndex {
-  background-image: url(../img/index/trekkingAloneGrande.jpeg);
+  background-image: url(../img/index/trekkingAlone.jpeg);
   background-repeat: no-repeat;
   background-size: 100%; }
 
@@ -40,7 +40,22 @@ h2 {
     line-height: 0.9rem;
     letter-spacing: 0.2rem;
     text-align: center;
-    max-width: 75%; } }
+    max-width: 75%; }
+  .seccion1DelIndex {
+    display: block;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+  .seccion1DelIndex__img {
+    width: 100%; }
+  .seccion1DelIndex__titulo {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2rem; }
+  .seccion1DelIndex__parrafo {
+    font-family: "Monserrat", sans-serif;
+    text-align: center; } }
 
 @media (min-width: 319px) {
   .mainDelIndex h1, .mainDelIndex h2 {
@@ -74,6 +89,29 @@ h2 {
     line-height: 3rem;
     letter-spacing: 0.3rem; } }
 
+@media (min-width: 992px) {
+  .seccion1DelIndex {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "imagen titulo" "imagen parrafo";
+    column-gap: 2rem; }
+  .seccion1DelIndex__img {
+    grid-area: imagen;
+    width: 555px; }
+  .seccion1DelIndex__titulo {
+    grid-area: titulo;
+    padding-top: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: left; }
+  .seccion1DelIndex__parrafo {
+    grid-area: parrafo;
+    padding-right: 1rem;
+    font-size: 1.3rem; } }
+
 @media (min-width: 1200px) {
   .mainDelIndex h1, .mainDelIndex h2 {
     font-size: 4rem;
@@ -87,29 +125,9 @@ h2 {
     color: #fff;
     line-height: 3rem;
     letter-spacing: 0.3rem; }
-  .seccion1DelIndex {
-    padding-top: 5rem;
-    padding-bottom: 4.75rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: "imagen titulo" "imagen parrafo";
-    column-gap: 2rem;
-    background-color: #61B142; }
-  .seccion1DelIndex__img {
-    grid-area: imagen;
-    width: 555px; }
   .seccion1DelIndex__titulo {
-    grid-area: titulo;
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 14px;
-    font-size: 40px; }
-  .seccion1DelIndex__parrafo {
-    grid-area: parrafo;
-    padding-right: 1rem;
-    font-family: "Monserrat", sans-serif; } }
+    text-align: center;
+    column-gap: 0.2rem; } }
 
 .footerDelIndex .footerDelIndex__link {
   text-decoration: none; }
@@ -252,7 +270,7 @@ h2 {
   .formularioPrincipal__tituloDelFormulario {
     font-family: "Roboto", sans-serif;
     color: black;
-    font-size: 2.8rem; }
+    font-size: 2rem; }
   .formularioPrincipal__form {
     font-family: "Monserrat", sans-serif;
     text-align: center;
@@ -276,7 +294,7 @@ h2 {
 
 @media (min-width: 333px) {
   .formularioPrincipal__tituloDelFormulario {
-    font-size: 3.5rem; } }
+    font-size: 2.5rem; } }
 
 @media (min-width: 768px) {
   .formularioPrincipal__form {
