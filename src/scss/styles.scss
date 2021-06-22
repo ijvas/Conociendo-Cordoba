@@ -9,10 +9,13 @@ $verdeCordoba: #61B142;
 $Impact: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 $paddingParaBotones: 4px;
 
+
 h1 {
     color: $verdeCordoba;
-    font-size: 40px;
-    font-family: 'Homemade Apple', cursive;
+    font-size: 4rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -25,37 +28,142 @@ h2 {
 }
 
 
+
+/*Acá empiezan los estilos del Index*/
+
+
+
+
 .mainDelIndex {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    grid-template-rows: 1fr 1.75fr 1fr;
-    grid-template-areas: 
-        "img img img"
-        "img centro img"
-        "img img img";
-
-    img {
-        grid-area: img;
-    }
-
-    h1 {
-        grid-area: centro;
-    }
-
-    p {
-        grid-area: centro;
-        color: white;
-        max-width: 500px;
-        text-align: center;
-        margin: auto;
-        line-height: 25px;
-    }
-    align-content: center;
+    background-image: url(../img/index/trekkingAloneGrande.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 }
 
+@media(min-width:1px) {
 
-.mainDelIndex__imagen {
-    width: 100%
+    .mainDelIndex h1{
+        font-size: 1.5rem;
+        padding-top: 4rem;
+        line-height: 2.5rem;
+        margin-bottom: 0px;
+        letter-spacing: 0.1rem;
+    }
+
+    .mainDelIndex p{
+        padding-top: 0px;
+        padding-bottom: 4.7rem;
+        margin: auto;
+        font-size: 0.5rem;
+        font-weight: 400;
+        color: #fff;
+        line-height: 0.9rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        max-width: 75%;
+    }
+}
+
+@media(min-width:319px) {
+
+    .mainDelIndex h1{
+        padding-top: 5rem;
+    }
+
+    .mainDelIndex p{
+        padding-top: 1rem;
+        padding-bottom: 3.7rem;
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+}
+
+@media(min-width: 400px) {
+
+    .mainDelIndex h1{
+        padding-top: 5rem;
+    }
+
+    .mainDelIndex p{
+        padding-top: 1rem;
+        padding-bottom: 7rem;
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+}
+
+@media(min-width:768px) {
+
+    .mainDelIndex h1{
+        font-size: 4rem;
+        padding-top: 10rem;
+        line-height: 5rem;
+    }
+
+    .mainDelIndex p{
+        padding: 1.75rem;
+        padding-bottom: 8rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #fff;
+        line-height: 3rem;
+        letter-spacing: 0.3rem;
+    }
+
+}
+
+@media(min-width: 1200px) {
+
+    .mainDelIndex h1{
+        font-size: 4rem;
+        padding-top: 10rem;
+        line-height: 5rem;
+    }
+
+    .mainDelIndex p{
+        padding: 1.75rem;
+        padding-bottom: 28rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #fff;
+        line-height: 3rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .seccion1DelIndex {
+        padding-top: 5rem;
+        padding-bottom: 4.75rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: 
+        "imagen titulo"
+        "imagen parrafo";
+        column-gap: 2rem;
+        background-color: $verdeCordoba;
+    }
+
+    .seccion1DelIndex__img {
+        grid-area: imagen;
+        width: 555px;
+    }
+
+    .seccion1DelIndex__titulo {
+        grid-area: titulo;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 14px;
+        font-size: 40px;
+    }
+
+    .seccion1DelIndex__parrafo {
+        grid-area: parrafo;
+        padding-right: 1rem;
+        font-family: "Monserrat", sans-serif;
+    }
+
 }
 
 .footerDelIndex {
@@ -69,88 +177,6 @@ h2 {
     margin-top: 20px;
     margin-right: 20px;
 }
-
-
-@media(max-width:575px) {
-    .mainDelIndex h1{
-        font-size: 30px;
-        margin-top: 60px;
-    }
-
-    .mainDelIndex p{
-        padding: 30px;
-        margin-bottom: 75px;
-        font-size: 10px;
-        line-height: 15px;
-    }
-}
-
-@media(min-width:576px) and (max-width:767px) {
-    .mainDelIndex h1{
-        font-size: 35px;
-        margin-top: 55px;
-    }
-
-    .mainDelIndex p{
-        padding: 30px;
-        margin-bottom: 75px;
-        font-size: 12px;
-        line-height: 15px;
-    }
-}
-
-@media(min-width:768px) and (max-width:991px) {
-    .mainDelIndex h1{
-        font-size: 45px;
-        margin-top: 75px;
-    }
-
-    .mainDelIndex p{
-        padding: 30px;
-        margin-bottom: 100px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-}
-
-@media(min-width:992px) and (max-width:1199px) {
-    .mainDelIndex h1{
-        font-size: 45px;
-        margin-top: 125px;
-    }
-
-    .mainDelIndex p{
-        padding: 30px;
-        margin-bottom: 180px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-}
-
-@media(min-width:1200px) {
-    .mainDelIndex h1{
-        font-size: 45px;
-        margin-top: 150px;
-    }
-
-    .mainDelIndex p{
-        padding: 30px;
-        margin-bottom: 180px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-
-    .mainDelIndex {
-        margin-right: 180px;
-    }
-
-    .footerDelIndex {
-        margin-left: 182px;
-    }
-}
-
-
-
 
 
 
