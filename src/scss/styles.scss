@@ -20,7 +20,6 @@ h1 {
 }
 
 h2 {
-    @extend h1;
     font-family: $Impact;
     color: black;
     font-size: 55px;
@@ -216,6 +215,26 @@ h2 {
 
 
 
+@media(min-width: 1px) {
+
+    #cartas {
+        display: flex;
+    }
+}
+
+@media(min-width: 333px) {
+
+}
+
+@media(min-width: 768px) {
+
+}
+
+@media(min-width: 1200px) {
+
+}
+
+
 .nosotrosMain  {
     text-align: center;
     h2{
@@ -349,7 +368,6 @@ h2 {
 
 .mainDeGaleria__galeria--contenedor {
     width: 100%;
-    margin: auto;
     margin-top: 2rem;
     display: grid;
 }
@@ -361,6 +379,20 @@ h2 {
         height: 100%;
         object-fit: cover;
     }
+}
+
+.footerDeGaleria {
+    margin-bottom: 5px;
+}
+
+    
+.footerDeGaleria__link {
+    text-decoration: none;
+}
+
+.footerDeGaleria__link--img{
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 @media(min-width:520px) {
@@ -386,20 +418,18 @@ h2 {
 }
 
 @media(min-width:1024px) {
+    
     .mainDeGaleria__galeria--contenedor {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 1024px;
+        width: 100%;
+        margin: auto;
     }
 
-    .footerDeGaleria {
-        margin-left: 65px;
-    }
 }
 
 @media(min-width:1200px) {
     .mainDeGaleria__galeria--contenedor {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 1200px;
     }
 }
 
@@ -479,9 +509,6 @@ h2 {
         width: 100%;
     }
 
-    .footerDeContactanos {
-        margin-bottom: 1rem;
-    }
 }
 
 @media(min-width: 1200px) {

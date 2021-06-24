@@ -4,7 +4,7 @@
   padding: 0px;
   box-sizing: border-box; }
 
-h1, h2 {
+h1 {
   color: #61B142;
   font-size: 4rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -24,7 +24,7 @@ h2 {
   background-size: 100%; }
 
 @media (min-width: 1px) {
-  .mainDelIndex h1, .mainDelIndex h2 {
+  .mainDelIndex h1 {
     font-size: 1.5rem;
     padding-top: 4rem;
     line-height: 2.5rem;
@@ -58,7 +58,7 @@ h2 {
     text-align: center; } }
 
 @media (min-width: 319px) {
-  .mainDelIndex h1, .mainDelIndex h2 {
+  .mainDelIndex h1 {
     padding-top: 5rem; }
   .mainDelIndex p {
     padding-top: 1rem;
@@ -67,7 +67,7 @@ h2 {
     line-height: 1rem; } }
 
 @media (min-width: 400px) {
-  .mainDelIndex h1, .mainDelIndex h2 {
+  .mainDelIndex h1 {
     padding-top: 5rem; }
   .mainDelIndex p {
     padding-top: 1rem;
@@ -76,7 +76,7 @@ h2 {
     line-height: 1rem; } }
 
 @media (min-width: 768px) {
-  .mainDelIndex h1, .mainDelIndex h2 {
+  .mainDelIndex h1 {
     font-size: 4rem;
     padding-top: 10rem;
     line-height: 5rem; }
@@ -113,7 +113,7 @@ h2 {
     font-size: 1.3rem; } }
 
 @media (min-width: 1200px) {
-  .mainDelIndex h1, .mainDelIndex h2 {
+  .mainDelIndex h1 {
     font-size: 4rem;
     padding-top: 10rem;
     line-height: 5rem; }
@@ -137,6 +137,10 @@ h2 {
   margin-right: 20px; }
 
 /*Acá empiezan los estilos de la página nosotros*/
+@media (min-width: 1px) {
+  #cartas {
+    display: flex; } }
+
 .nosotrosMain {
   text-align: center; }
   .nosotrosMain h2 {
@@ -223,7 +227,6 @@ h2 {
 
 .mainDeGaleria__galeria--contenedor {
   width: 100%;
-  margin: auto;
   margin-top: 2rem;
   display: grid; }
 
@@ -233,6 +236,16 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover; }
+
+.footerDeGaleria {
+  margin-bottom: 5px; }
+
+.footerDeGaleria__link {
+  text-decoration: none; }
+
+.footerDeGaleria__link--img {
+  margin-top: 20px;
+  margin-right: 20px; }
 
 @media (min-width: 520px) {
   .mainDeGaleria__galeria--contenedor {
@@ -252,14 +265,12 @@ h2 {
 @media (min-width: 1024px) {
   .mainDeGaleria__galeria--contenedor {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 1024px; }
-  .footerDeGaleria {
-    margin-left: 65px; } }
+    width: 100%;
+    margin: auto; } }
 
 @media (min-width: 1200px) {
   .mainDeGaleria__galeria--contenedor {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 1200px; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
 /*Acá empiezan los estilos de la página contactanos*/
 @media (min-width: 1px) {
@@ -298,9 +309,7 @@ h2 {
 
 @media (min-width: 768px) {
   .formularioPrincipal__form {
-    width: 100%; }
-  .footerDeContactanos {
-    margin-bottom: 1rem; } }
+    width: 100%; } }
 
 @media (min-width: 1200px) {
   .formularioPrincipal {
