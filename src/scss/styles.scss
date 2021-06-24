@@ -222,14 +222,6 @@ $paddingParaBotones: 4px;
 
 
 
-.header__navbar--nosotros {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: #fff;
-    width: 100%;
-    z-index: 1;
-}
 
 .nosotrosMain {
     margin-top: 78px;
@@ -286,6 +278,20 @@ $paddingParaBotones: 4px;
 
 @media(min-width: 1px) {
 
+    .header__navbar--nosotros {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .header__navbar--nosotrosBoton {
+        position: relative;
+        right: 110px;
+    }
+
     .nosotrosMain {
         background-image: url(../img/nosotros/mateGrande.jpg);
         background-repeat: no-repeat;
@@ -317,8 +323,40 @@ $paddingParaBotones: 4px;
 
 }
 
-@media(min-width: 333px) {
+@media(min-width: 320px) {
 
+    .header__navbar--nosotrosBoton {
+        position: relative;
+        right: 73px;
+    }
+
+}
+
+@media(min-width: 360px) {
+
+    .header__navbar--nosotrosBoton {
+        position: relative;
+        right: 35px;
+    }
+    
+}
+
+@media(min-width: 375px) {
+
+    .header__navbar--nosotrosBoton {
+        position: relative;
+        right: 20px;
+    }
+    
+}
+
+@media(min-width: 411px) {
+
+    .header__navbar--nosotrosBoton {
+        position: relative;
+        right: 5px;
+    }
+    
 }
 
 @media(min-width: 768px) {

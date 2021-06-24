@@ -143,14 +143,6 @@
   margin-right: 20px; }
 
 /*Acá empiezan los estilos de la página nosotros*/
-.header__navbar--nosotros {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: #fff;
-  width: 100%;
-  z-index: 1; }
-
 .nosotrosMain {
   margin-top: 78px;
   background-image: url(../img/nosotros/mate.jpg);
@@ -196,6 +188,16 @@
   top: 78px; }
 
 @media (min-width: 1px) {
+  .header__navbar--nosotros {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1; }
+  .header__navbar--nosotrosBoton {
+    position: relative;
+    right: 110px; }
   .nosotrosMain {
     background-image: url(../img/nosotros/mateGrande.jpg);
     background-repeat: no-repeat;
@@ -215,6 +217,26 @@
   .footerDeNosotros__link--img {
     margin-top: 1rem;
     margin-right: 1rem; } }
+
+@media (min-width: 320px) {
+  .header__navbar--nosotrosBoton {
+    position: relative;
+    right: 73px; } }
+
+@media (min-width: 360px) {
+  .header__navbar--nosotrosBoton {
+    position: relative;
+    right: 35px; } }
+
+@media (min-width: 375px) {
+  .header__navbar--nosotrosBoton {
+    position: relative;
+    right: 20px; } }
+
+@media (min-width: 411px) {
+  .header__navbar--nosotrosBoton {
+    position: relative;
+    right: 5px; } }
 
 .nosotrosTablaDeServicios {
   margin-top: 30px;
