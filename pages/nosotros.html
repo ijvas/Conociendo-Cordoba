@@ -10,6 +10,9 @@
         <meta name="description" content="Somos una empresa dedicada al turismo provincial con sede en la Ciudad de 
         Córdoba.">
         <meta name="keywords" content="empresa, turismo, cordoba capital, carlos paz, santa rosa de calamuchita, cosquin, miramar, viajes, paseos, guia turistico, sierras, rios">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,7 +29,7 @@
       <header class="container-fluid">
 
 
-        <nav class="header__navbar navbar navbar-expand-lg navbar-light">
+        <nav class="header__navbar--nosotros navbar navbar-expand-lg navbar-light">
   
           <div class="container">
   
@@ -73,95 +76,116 @@
       </header>
        
       
-      <main class="nosotrosMain container animate__animated animate__fadeInUpBig">
+      <main class="nosotrosMain container-fluid">
 
-        <h2 class="nosotrosMain__titulo">
-            <strong>Más que una guía, una compañía ...</strong>
+        <h2 class="nosotrosMain__titulo animate__animated animate__fadeInUpBig">
+          Más que una guía, una compañía ...
         </h2>
+      
+        <section>
+          
+          <p class="nosotrosMain__parrafo animate__animated animate__fadeInUpBig">
+            Somos una empresa dedicada al turismo provincial con sede en la Ciudad de 
+            Córdoba.
+            <br>
+            Nuestro objetivo principal en poder brindarle a nuestros clientes experiencias
+            memorables. Ya sea tanto por los lugares que elegimos para recorrer, como por la
+            atención de calidad que nos identifica.
+            Nuestros guías son certificados en turismo y hotelería, asegurando así la 
+            tranquilidad y el sello de calidad a quienes contratan nuestros servicios.                       
+          </p>  
 
-        <div>
-            <p class="nosotrosMain__parrafo">
-                Somos una empresa dedicada al turismo provincial con sede en la Ciudad de 
-                Córdoba.
-                <br>
-                Nuestro objetivo principal en poder brindarle a nuestros clientes experiencias
-                memorables. Ya sea tanto por los lugares que elegimos para recorrer, como por la
-                atención de calidad que nos identifica.
-                Nuestros guías son certificados en turismo y hotelería, asegurando así la 
-                tranquilidad y el sello de calidad a quienes contratan nuestros servicios.                       
-            </p>
-        </div>
+        </section>
 
-        <section id="cartas" class="container">
+      </main>  
 
-          <div class="card" style="width: 18rem;">
+        <section class="nosotrosCartas">
+
+          <div class="card">
+
             <img src="../src/img/nosotros/tarjetas/CarlosPaz.jpg" class="card-img-top" alt="imagen aérea del dique san roque">
+
             <div class="card-body">
-              <h5 class="card-title">Paseos en Combi</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <h5 class="card-title nosotrosMain__cartas--titulo">Paseos en Combi</h5>
+
+              <p class="card-text nosotrosMain__cartas--parrafo">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
             </div>
+
           </div>
   
-          <div class="card" style="width: 18rem;">
+
+          <div class="card">
+
             <img src="../src/img/nosotros/tarjetas/IglesiaBuenPastor.jpg" class="card-img-top" alt="imagen de estatuas que se encuentran construidas en las paredes de la iglesia los capuchinos en cordoba capital">
+
             <div class="card-body">
-              <h5 class="card-title">Caminatas</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <h5 class="card-title nosotrosMain__cartas--titulo">Caminatas</h5>
+
+              <p class="card-text nosotrosMain__cartas--parrafo">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
             </div>
+
           </div>
   
-          <div class="card" style="width: 18rem;">
+          
+          <div class="card">
+
             <img src="../src/img/nosotros/tarjetas/DiqueLosMolinos.jpg" class="card-img-top" alt="imagen del dique los olinos">
+
             <div class="card-body">
-              <h5 class="card-title">Avistajes</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <h5 class="card-title nosotrosMain__cartas--titulo">Avistajes</h5>
+
+              <p class="card-text nosotrosMain__cartas--parrafo">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
             </div>
+
           </div>
   
-          <div class="card" style="width: 18rem;">
-            <img src="../src/img/nosotros/tarjetas/mate.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Buen ambiente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
   
-          <div class="card" style="width: 18rem;">
+          <div class="card">
+
             <img src="../src/img/nosotros/tarjetas/AtardecerEnElRio.jpg" class="card-img-top" alt="imagen de un atardecer en el rio san antonio">
+
             <div class="card-body">
-              <h5 class="card-title">Atardeceres increíbles</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <h5 class="card-title nosotrosMain__cartas--titulo">Atardeceres increíbles</h5>
+
+              <p class="card-text nosotrosMain__cartas--parrafo">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
             </div>
+
           </div>
   
         </section>
 
+
         <div id="carouselExampleSlidesOnly" class="Carrusel carousel slide container" data-bs-ride="carousel">
 
           <div class="carousel-inner">
-            
+
             <div class="carrusel__item carousel-item active">
-              <img src="../src/img/nosotros/imgDelCarrusell/GrupoChampaquiAntesDePartir.jpg" class="carrusel__item--img d-block w-100" alt="Grupo de personas en una de las bases del Cerro Champaquí descansando para seguir ascendiendo">
+              <img src="../src/img/nosotros/imgDelCarrusell/grupoChampaqui.jpg" class="carrusel__item--img d-block w-100" alt="Foto en grupo haciendo cima en el Cerro Champaquí">
+            </div>
+            
+            <div class="carrusel__item carousel-item">
+              <img src="../src/img/nosotros/imgDelCarrusell/haciendoBase.jpg" class="carrusel__item--img d-block w-100" alt="">
+            </div>
+
+            <div class="carrusel__item carousel-item">
+              <img src="../src/img/nosotros/imgDelCarrusell/SentadosEnLaCima.jpg" class="carrusel__item--img d-block w-100" alt="Gente Haciendo Trekking Rumbo a la Cima del Cerro Champaquí">
             </div>
 
             <div class="carrusel__item carousel-item">
               <img src="../src/img/nosotros/imgDelCarrusell/GenteTrekking.jpg" class="carrusel__item--img d-block w-100" alt="Gente Haciendo Trekking Rumbo a la Cima del Cerro Champaquí">
             </div>
-
-            <div class="carrusel__item carousel-item">
-              <img src="../src/img/nosotros/imgDelCarrusell/grupoChampaqui.jpg" class="carrusel__item--img d-block w-100" alt="Foto en grupo haciendo cima en el Cerro Champaquí">
-            </div>
     
           </div>
     
         </div>
-
-      </main>
 
 
       <section class="nosotrosTablaDeServicios container-fluid animate__animated animate__fadeInUpBig">
