@@ -568,4 +568,39 @@
 
 /*Acá empiezan los estilos de la página contactanos*/
 .body404 {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(125deg, #039B8E, #61B142); }
+
+.container404 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center; }
+
+.container404 h1 {
+  font-size: 160px;
+  margin: 0px;
+  font-weight: 900;
+  letter-spacing: 20px;
+  background: url(../img/404/fondo.jpg);
+  background-position-y: 3rem;
+  background-position-x: -40rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+.container404 a {
+  text-decoration: none;
+  background-color: #e55039aa;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.4s; }
+
+.container404 a:hover {
+  background-color: red; }
