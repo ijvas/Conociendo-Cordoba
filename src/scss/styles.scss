@@ -928,7 +928,7 @@ $paddingParaBotones: 4px;
     letter-spacing: 20px;
     background: url(../img/404/fondo.jpg);
     background-position-y: 3rem;
-    background-position-x: -40rem;
+    background-position-x: -35rem;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -948,4 +948,13 @@ $paddingParaBotones: 4px;
 
 .container404 a:hover {
     background-color: red;
+}
+
+@media(max-width:320px) {
+    .container404 h1 {
+        font-size: 120px;
+        background-position-y: 1rem;
+        background-position-x: -65rem;
+    }
+   
 }
