@@ -62,7 +62,8 @@
   .footerDelIndex {
     padding-bottom: 1rem;
     position: relative;
-    top: 78px; }
+    top: 78px;
+    margin: 0px; }
   .footerDelIndex__elementos {
     display: flex;
     flex-flow: row nowrap;
@@ -185,7 +186,8 @@
   .footerDeNosotros {
     padding-bottom: 1rem;
     position: relative;
-    top: 78px; }
+    top: 78px;
+    margin: 0px; }
   .footerDeNosotros__elementos {
     display: flex;
     flex-flow: row nowrap;
@@ -295,6 +297,93 @@
   .nosotrosMain__parrafo {
     margin-top: 15rem; } }
 
+/*Acá comienzan los estilos de la página "localidades" */
+@media (min-width: 1px) {
+  .mainDeLocalidades {
+    padding: 0px; }
+  .mainDeLocalidades__tituloPrincipal {
+    background-image: url(../img/nosotros/tarjetas/DiqueLosMolinos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .mainDeLocalidades__tituloPrincipal--titulo {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #61B142;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; }
+  .mainDelocalidades__izquierda {
+    margin-top: 5rem; }
+  .mainDelocalidades__derecha {
+    margin-top: 5rem; }
+  .mainDelocalidades__izquierda--img {
+    width: 100%; }
+  .mainDelocalidades__izquierda--titulo {
+    font-family: "Oswald", sans-serif;
+    color: #61B142;
+    text-align: center; }
+  .mainDelocalidades__izquierda--txt {
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
+  .mainDelocalidades__derecha--img {
+    width: 100%; }
+  .mainDelocalidades__derecha--titulo {
+    font-family: "Oswald", sans-serif;
+    color: #61B142;
+    text-align: center; }
+  .mainDelocalidades__derecha--txt {
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
+  .footerDeLocalidades {
+    padding-bottom: 1rem;
+    position: relative;
+    top: 78px;
+    margin: 0px; }
+  .footerDeLocalidades__elementos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+  .footerDeLocalidades__link {
+    text-decoration: none; }
+  .footerDeLocalidades__link--img {
+    margin-top: 1rem; } }
+
+@media (min-width: 768px) {
+  .mainDeLocalidades__tituloPrincipal--titulo {
+    font-size: 4rem;
+    padding-top: 14rem;
+    padding-bottom: 20rem;
+    font-family: "Montserrat", sans-serif;
+    color: #61B142;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; }
+  .mainDelocalidades__izquierda {
+    display: flex;
+    flex-flow: row;
+    margin: 10rem 3rem 0px 3rem; }
+  .mainDelocalidades__izquierda--img {
+    width: 50%; }
+  .mainDelocalidades__izquierda--parteTexto {
+    margin: auto;
+    padding-left: 3rem; }
+  .mainDelocalidades__derecha {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 10rem 3rem 0px 3rem; }
+  .mainDelocalidades__derecha--img {
+    width: 50%; }
+  .mainDelocalidades__derecha--parteTexto {
+    margin: auto;
+    padding-right: 3rem; }
+  .footerDeLocalidades__elementos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; } }
+
 /*Acá empiezan los estilos de la Galería de Imagenes*/
 .header__navbar--galeria {
   position: fixed;
@@ -309,11 +398,14 @@
   top: 78px; }
 
 .mainDeGaleria__titulo {
+  font-size: 4rem;
+  padding-top: 14rem;
+  padding-bottom: 20rem;
   font-family: "Montserrat", sans-serif;
   color: #61B142;
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 1.5rem; }
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
 
 .mainDeGaleria__galeria--contenedor {
   width: 100%;
@@ -330,7 +422,8 @@
 .footerDeGaleria {
   padding-bottom: 1rem;
   position: relative;
-  top: 78px; }
+  top: 78px;
+  margin: 0px; }
 
 .footerDeGaleria__elementos {
   display: flex;
@@ -343,7 +436,25 @@
 .footerDeGaleria__link--img {
   margin-top: 1rem; }
 
+@media (min-width: 1px) {
+  .mainDeGaleria__titulo {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #61B142;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; } }
+
 @media (min-width: 520px) {
+  .mainDeGaleria__titulo {
+    font-size: 4rem;
+    padding-top: 14rem;
+    padding-bottom: 20rem;
+    font-family: "Montserrat", sans-serif;
+    color: #61B142;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; }
   .mainDeGaleria__galeria--contenedor {
     grid-template-columns: 1fr 1fr; }
   .footerDeGaleria {
@@ -404,7 +515,8 @@
   .footerDeContactanos {
     padding-bottom: 1rem;
     position: relative;
-    top: 78px; }
+    top: 78px;
+    margin: 0px; }
   .footerDeContactanos__elementos {
     display: flex;
     flex-flow: row nowrap;

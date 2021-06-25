@@ -6,58 +6,188 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conociendo Córdoba - Localidades</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="../src/css/styles.css" type="text/css">
     </head>
     <body>
 
 
-      <header>
+      <header class="container-fluid">
 
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="header__navbar--localidades navbar navbar-expand-lg navbar-light">
+  
           <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="logoCC.jpg" alt="conociendo cordoba"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+  
+            <a class="header__navbar--logo navbar-brand animate__heartBeat" href="../index.html"><img src="../src/img/logoCC.jpg" alt="logo de conociendo cordoba"></a>
+            
+            <button class="header__navbar--boton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="header__navbar--botonResponsive navbar-toggler-icon"></span>
             </button>
+  
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+  
+              <ul class="header__navbar navbar-nav">
+  
+                <li class="header__navbar--item nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="localidades.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Localidades
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Cosquin</a></li>
-                    <li><a class="dropdown-item" href="#">Carlos Paz</a></li>
-                    <li><a class="dropdown-item" href="#">Córdoba Capital</a></li>
-                    <li><a class="dropdown-item" href="#">Calamuchita</a></li>
-                    <li><a class="dropdown-item" href="#">Miramar</a></li>
-                  </ul>
+
+                <li class="header__navbar--item nav-item">
+                  <a class="nav-link" href="../pages/localidades.html">Localidades</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contactanos.html">Contactanos</a>
+ 
+                <li class="header__navbar--item nav-item">
+                  <a class="nav-link" href="../pages/galeriaDeImagenes.html">Imágenes</a>
                 </li>
+  
+                <li class="header__navbar--item nav-item">
+                  <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+                </li>
+  
               </ul>
+  
             </div>
+  
           </div>
+  
         </nav>
-
-
+  
+  
       </header>
-        
+      
+      <main class="mainDeLocalidades container-fluid">
 
-        <div class="container-fluid" id="footer">
-            <footer class="container">
-                <img src="iconoInstagram.svg" alt="logo de instagram">
-                <img src="iconoFacebook.svg"logo de facebook">
-                <img src="iconoTwitter.svg" alt="logo de twitter">
-            </footer>
+        <div class="mainDeLocalidades__tituloPrincipal">
+          <h2 class="mainDeLocalidades__tituloPrincipal--titulo">
+            Nuestras localidades amigas
+          </h2>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <div class="mainDelocalidades__izquierda">
+            
+          <img class="mainDelocalidades__izquierda--img" src="../src/img/localidades/cordoba.jpg" alt="Córdoba Capital" >
+
+          <div class="mainDelocalidades__izquierda--parteTexto">  
+
+             <h2 class="mainDelocalidades__izquierda--titulo">Ciudad de Córdoba</h2>
+
+              <p class="mainDelocalidades__izquierda--txt">
+                 La ciudad de Córdoba es la capital de la provincia y posee muchos
+                 sitios de interés para el turismo. 
+             </p>
+
+         </div>
+
+       </div> 
+
+
+       <div class="mainDelocalidades__derecha">
+               
+           <img class="mainDelocalidades__derecha--img" src="../src/img/localidades/carlos_paz.jpg" alt="Carlos Paz">
+               
+           <div class="mainDelocalidades__derecha--parteTexto">
+
+              <h2 class="mainDelocalidades__derecha--titulo">Villa Carlos Paz</h2>
+
+              <p class="mainDelocalidades__derecha--txt">
+                  "La villa", como le dicen, es uno de los lugares favoritos para los
+                   turistas cuando viajan a nuestra provincia. Sus principales
+                   atractivo son El Lago San roque y sus teatros, conocidos a lo 
+                  largo y ancho del país.
+              </p>
+
+         </div> 
+
+       </div>
+           
+
+       <div class="mainDelocalidades__izquierda">
+
+           <img class="mainDelocalidades__izquierda--img" src="../src/img/localidades/cosquin.jpg" alt="Cosquín" >
+           
+           <div class="mainDelocalidades__izquierda--parteTexto">
+
+               <h2 class="mainDelocalidades__izquierda--titulo">Cosquín</h2>
+
+               <p class="mainDelocalidades__izquierda--txt">
+                   Cosquín es un pueblo ubicado en la zona de Punilla de nustra
+                   amada Córdoba. Se caracteríza por su tranquilidad y su ambiente
+                   de pueblo pero lo que atrae mayormente a los turistas es su fama
+                   por los festivales que se organizan en lugares estratégicos.
+               </p>
+
+           </div>
+
+       </div>
+
+
+       <div class="mainDelocalidades__derecha">
+
+           <img class="mainDelocalidades__derecha--img" src="../src/img/localidades/calamuchita.jpg" alt="Santa Rosa de Calamuchita" >
+       
+           <div class="mainDelocalidades__derecha--parteTexto"> 
+
+               <h2 class="mainDelocalidades__derecha--titulo">Santa Rosa de Calamuchita</h2>
+
+               <p class="mainDelocalidades__derecha--txt">
+                   Ubicada a solo 100km al sur de la ciudad capital, Santa Rosa ofrece
+                   paisajes que invitan al turismo y la tranquilidad, como así 
+                   también a grandes cantidades de jovenes en distintas épocas del año,
+                   como lo son la primavera.
+               </p>
+
+           </div>
+
+       </div>
+
+
+       <div class="mainDelocalidades__izquierda">
+
+           <img class="mainDelocalidades__izquierda--img" src="../src/img/localidades/miramar.jpg" alt="Miramar" >
+       
+           <div class="mainDelocalidades__izquierda--parteTexto">
+
+               <h2 class="mainDelocalidades__izquierda--titulo">Miramar</h2>
+
+               <p class="mainDelocalidades__izquierda--txt">
+                   Es una ciudad ubicada al Este de la ciudad capital y es reconocida
+                   por sus balnearios sobre la Laguna Mar Chiquita, la cual es la 
+                   laguna de agua salada más grande en Latinoamerica.
+               </p>
+
+           </div>
+
+       </div>
+
+      </main>
+
+
+      <footer class="footerDeLocalidades container-fluid row">
+
+        <div class="col">
+  
+        </div>
+        <div class="col footerDeLocalidades__elementos">
+          <a class="footerDeLocalidades__link" href="#">
+            <img class="footerDeLocalidades__link--img" src="../src/img/iconoInstagram.svg" alt="logo de instagram">
+          </a>
+  
+          <a class="footerDeLocalidades__link" href="#">
+            <img class="footerDeLocalidades__link--img" src="../src/img/iconoFacebook.svg" alt="logo de facebook">
+          </a>
+          
+          <a class="footerDeLocalidades__link" href="#">
+            <img class="footerDeLocalidades__link--img" src="../src/img/iconoTwitter.svg" alt="logo de twitter">
+          </a>
+        </div>
+        <div class="col">
+  
+        </div>
+  
+      </footer>
+  
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     </body>    
 </html>
