@@ -1,34 +1,34 @@
-#Introducción
+# Introduccion
 
 Este repositorio contiene un sitio Web Full Responsive realizado como proyecto final para el curso de Desarrollo Web, de la carrera "Desarrollador Web Full Stack" dictado en la academia [Coderhouse](https://www.coderhouse.com/), de Argentina.
 
-##El proyecto
+## El proyecto
 
-##[Conociendo Córdoba](https://ijvas.github.io/conociendo_cordoba-vasconcel/)
-###Historia..
+## [Conociendo Córdoba](https://ijvas.github.io/conociendo_cordoba-vasconcel/)
+### Historia..
 
 La idea de la empresa surgió como una mezcla, en parte, por algunos sueños personales del desarrollador y el lugar donde actualmente vive. Se trata de una empresa que ofrece salidas turísticas, visitas guiadas, escapadas de acampe, paseos en combi, etc..
 
-##Progreso del Proyecto
+## Progreso del Proyecto
 
 El trabajo se empezó desde prácticamente cero conocimiento de desarrollo web.  Pudiendo, a lo largo de su desarrollo, ir desplegando distintas herramientas y conocimientos nuevos adquiridos para la práctica y ejecución del mismo como ser...
 
-####Conocimiento de lo que son los IDE, como ser:
+#### Conocimiento de lo que son los IDE, como ser:
 
-* #####Visual Studio Code
-* #####Brackets
-* #####Sublime Text
+* ##### Visual Studio Code
+* ##### Brackets
+* ##### Sublime Text
 
 Ya con el programa elegido para editar nuestro proyecto, en mi caso Visual Studio Code procedimos a empezar con la práctica y a darle forma conforme pasaba el curso a un proyecto, que cambió varias veces de forma hasta concluir en el resultado que se ve en el repositorio actual, donde no se llegan a ver las anteriores versiones ya que Git, fue una de las últimas cosas que aprendimos y recien pudimos versionar desde entonces.
 
-##Que más aprendimos y utlizamos:
+## Que más aprendimos y utlizamos:
 
-* #####Lenguaje de etiquetas HTML5
-* #####Lenguaje de estilo CSS3
-* #####Preprocesador de estilo SASS y SCSS
-* #####nodeJS 
+* ##### Lenguaje de etiquetas HTML5
+* ##### Lenguaje de estilo CSS3
+* ##### Preprocesador de estilo SASS y SCSS
+* ##### Node.js 
 
-####HTML code
+#### HTML code
 
 ```html
 <!DOCTYPE html>
@@ -50,12 +50,12 @@ A travez de las siguientes líneas de código pudimos instalar el nodemon y asi 
 `$ npm install -D node-sass nodemon`
 `$ npm run watch-css`
 
-##Frameworks y Librerías
+## Frameworks y Librerías
 
 Hemos aprendido lo que son los Frameworks y las librerías y en este proyecto hemos utilizado Bootstrap, en éste en particular en su versión 5.0 que es la más reciente al día de este escrito. Junto a Jquery para darle animación a su carrusell por ej.
 
-* #####Bootstrap
-* #####Jquery
+* ##### Bootstrap
+* ##### Jquery
 
 Hemos aprendido lo que es el Box Modeling que tanto sirve para entender como funciona todo el estilamiento de nuetras web. Para después implementar Flexbox y Grids a nuestro proyecto de seguido.
 
