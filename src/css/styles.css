@@ -302,7 +302,7 @@
   .mainDeLocalidades {
     padding: 0px; }
   .mainDeLocalidades__tituloPrincipal {
-    background-image: url(../img/nosotros/tarjetas/DiqueLosMolinos.jpg);
+    background-image: url(../img/localidades/DiqueLosMolinos.jpg);
     background-repeat: no-repeat;
     background-size: 100%; }
   .mainDeLocalidades__tituloPrincipal--titulo {
@@ -413,11 +413,15 @@
   display: grid; }
 
 .mainDeGaleria__galeria--imagenes {
-  margin: 0.1rem; }
+  margin: 0.1rem;
+  transition: 2s; }
   .mainDeGaleria__galeria--imagenes img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
+
+.mainDeGaleria__galeria--imagenes:hover {
+  transform: scale(1.2, 1.2); }
 
 .footerDeGaleria {
   padding-bottom: 1rem;
@@ -436,7 +440,7 @@
 .footerDeGaleria__link--img {
   margin-top: 1rem; }
 
-@media (min-width: 1px) {
+@media (max-width: 519px) {
   .mainDeGaleria__titulo {
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
@@ -470,6 +474,15 @@
     grid-template-columns: 1fr 1fr 1fr; } }
 
 @media (min-width: 1024px) {
+  .mainDeGaleria__titulo {
+    font-size: 4rem;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    font-family: "Montserrat", sans-serif;
+    color: #61B142;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; }
   .mainDeGaleria__galeria--contenedor {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
@@ -477,7 +490,11 @@
 
 @media (min-width: 1200px) {
   .mainDeGaleria__galeria--contenedor {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+  #img1 {
+    transition: 1seg; }
+  #img1:hover {
+    opacity: 3px; } }
 
 /*Acá empiezan los estilos de la página contactanos*/
 .header__navbar--contactanos {
