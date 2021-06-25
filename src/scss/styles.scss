@@ -823,12 +823,13 @@ $paddingParaBotones: 4px;
         border-bottom-right-radius: 2rem;
     }
 
-    .formularioPrincipal__boton--reiniciar {
-        padding: $paddingParaBotones;
-    }
-    
     .formularioPrincipal__boton--enviar {
-        padding: $paddingParaBotones;
+        background-color: #e55039aa; 
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: none;
+        transition: 0.4s;
     }
 
     .footerDeContactanos {
@@ -868,6 +869,16 @@ $paddingParaBotones: 4px;
         width: 100%;
     }
 
+    .formularioPrincipal__boton--enviar {
+        padding: $paddingParaBotones;
+        background-color: #e55039aa; 
+        color: #fff;
+
+    }
+
+    .formularioPrincipal__boton--enviar:hover {
+        background-color: red;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -899,7 +910,7 @@ $paddingParaBotones: 4px;
 
 
 
-/*Acá empiezan los estilos de la página contactanos*/
+/*Acá empiezan los estilos de la página 404*/
 
 
 
@@ -937,8 +948,8 @@ $paddingParaBotones: 4px;
     text-decoration: none;
     background-color: #e55039aa; 
     color: #fff;
-    margin-top: 1rem;
     padding: 12px 24px;
+    margin-top: 1rem;
     display: inline-block;
     border-radius: 25px;
     font-size: 14px;
