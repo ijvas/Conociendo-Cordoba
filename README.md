@@ -43,8 +43,18 @@ Ya con el programa elegido para editar nuestro proyecto, en mi caso Visual Studi
 </html>
 ```
 
+#### CSS code
 
-A travez de las siguientes líneas de código pudimos instalar el nodemon y asi lograr que nos cargue directamente en nuestro archivo CSS, todo lo cargado en nuestro SCSS de una forma prolija y perfectamente ordenada.
+```html
+
+h1 {
+ background-color: green;
+}
+
+```
+
+
+A travez de las siguientes líneas de código pudimos instalar el nodemon y asi lograr que nos cargue directamente en nuestro archivo CSS, todo lo anteriormente cargado en nuestro SCSS de una forma prolija y perfectamente ordenada.
 
 `$ npm init`
 `$ npm install -D node-sass nodemon`
