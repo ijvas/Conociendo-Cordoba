@@ -11,7 +11,7 @@ La idea de la empresa surgió como una mezcla, en parte, por algunos sueños per
 
 ## Progreso del Proyecto
 
-El trabajo se empezó desde prácticamente cero conocimiento de desarrollo web.  Pudiendo, a lo largo de su desarrollo, ir desplegando distintas herramientas y conocimientos nuevos adquiridos para la práctica y ejecución del mismo como ser...
+El trabajo se empezó desde prácticamente cero conocimiento de desarrollo web.  Pudiendo, a lo largo de su desarrollo, ir desplegando distintas herramientas y conocimientos nuevos adquiridos para la práctica y ejecución del mismo como por ejemplo...
 
 #### Conocimiento de lo que son los IDE, como ser:
 
